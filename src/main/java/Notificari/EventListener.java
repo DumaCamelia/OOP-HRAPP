@@ -2,5 +2,7 @@ package Notificari;
 
 public class EventListener {
 
-    void detecteazaSchimbareStats(){};
+    public void onNotificareTrimisa(Notificare notificare) {
+        System.out.println("Event: Notificare trimisa (ID=" + notificare.getIdNotificare() + ")");
+    }
 }

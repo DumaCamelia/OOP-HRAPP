@@ -2,11 +2,12 @@ package Notificari;
 
 public class NotificationService {
 
-    void trimiteNotificare(Notificare notificare){
-        System.out.println("Trimitere notificare catre " + notificare.getDestinatar() + " cu mesajul: " + notificare.getMesaj());
+    public void trimiteNotificare(Notificare notificare) {
+        System.out.println("Trimitere notificare catre " + notificare.getDestinatar()
+                + " cu mesajul: " + notificare.getMesaj());
     }
 
-    void actualizeazaDashboard(Notificare notificare){
-        System.out.println("Actualizare notificare ID: " + notificare.getIdNotificare());
+    public void actualizeazaDashboard(Notificare notificare) {
+        System.out.println("Actualizare dashboard - notificare ID: " + notificare.getIdNotificare());
     }
 }
